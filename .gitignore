@@ -24,3 +24,6 @@ vite.config.ts.timestamp-*
 
 
 pnpm-workspace.yaml
+
+# Agent
+GEMINI.md
