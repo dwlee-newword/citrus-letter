@@ -9,7 +9,7 @@
 	--color-neutral-silver: #f5f7fa;
 	--color-neutral-white: #ffffff;
 
-	--color-primary: #28cb8b;
+	--color-primary: #4CAF4F;
 	--color-secondary: #263238;
 	--color-info: #2194f3;
 
@@ -30,4 +30,67 @@
 	--color-success: #2e7d31;
 
 	--font-sans: 'Inter', sans-serif;
+}
+
+@layer utilities {
+	.text-h1 {
+		font-size: 64px;
+		line-height: 76px;
+		font-weight: 600; /* SemiBold */
+	}
+	.text-h2 {
+		font-size: 36px;
+		line-height: 44px;
+		font-weight: 600; /* SemiBold */
+	}
+	.text-h3 {
+		font-size: 28px;
+		line-height: 36px;
+		font-weight: 600; /* SemiBold */
+	}
+	.text-h4 {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 600; /* SemiBold */
+	}
+	.text-r1 {
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 400; /* Regular */
+	}
+	.text-r2 {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400; /* Regular */
+	}
+	.text-r3 {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400; /* Regular */
+	}
+	.text-r4 {
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 400; /* Regular */
+	}
+	.text-m1 {
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 500; /* Medium */
+	}
+	.text-m2 {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 500; /* Medium */
+	}
+	.text-m3 {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 500; /* Medium */
+	}
+	.text-m4 {
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 500; /* Medium */
+	}
 }
