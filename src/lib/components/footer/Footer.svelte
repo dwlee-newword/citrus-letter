@@ -1,25 +1,26 @@
 <script lang="ts">
 	import Button from '$lib/components/button/Button.svelte';
+	import { t } from 'svelte-i18n';
 
 	const sitemap = [
 		{
-			title: 'Company',
+			titleKey: 'footer.company',
 			links: [
-				{ label: 'About Us', href: '#' },
-				{ label: 'Blog', href: '#' },
-				{ label: 'Contact', href: '#' },
-				{ label: 'Pricing', href: '#' },
-				{ label: 'Testimonials', href: '#' }
+				{ labelKey: 'footer.about', href: '#' },
+				{ labelKey: 'footer.blog', href: '#' },
+				{ labelKey: 'footer.contact', href: '#' },
+				{ labelKey: 'footer.pricing', href: '#' },
+				{ labelKey: 'footer.testimonials', href: '#' }
 			]
 		},
 		{
-			title: 'Support',
+			titleKey: 'footer.support',
 			links: [
-				{ label: 'Help Center', href: '#' },
-				{ label: 'Terms of Service', href: '#' },
-				{ label: 'Legal', href: '#' },
-				{ label: 'Privacy Policy', href: '#' },
-				{ label: 'Status', href: '#' }
+				{ labelKey: 'footer.help', href: '#' },
+				{ labelKey: 'footer.terms', href: '#' },
+				{ labelKey: 'footer.legal', href: '#' },
+				{ labelKey: 'footer.privacy', href: '#' },
+				{ labelKey: 'footer.status', href: '#' }
 			]
 		}
 	];
@@ -30,11 +31,11 @@
 		<!-- Brand Section -->
 		<div class="flex flex-col gap-6">
 			<div class="flex items-center gap-2">
-				<span class="text-h3 font-semibold">Citrus Letter</span>
+				<span class="text-h3 font-semibold">{$t('common.brand')}</span>
 			</div>
 			<div class="flex flex-col gap-2">
-				<p class="text-r3 text-neutral-silver">Copyright © 2026 Citrus Letter.</p>
-				<p class="text-r3 text-neutral-silver">All rights reserved.</p>
+				<p class="text-r3 text-neutral-silver">{$t('footer.copyright')}</p>
+				<p class="text-r3 text-neutral-silver">{$t('footer.all_rights')}</p>
 			</div>
 			<!-- Social Icons could go here -->
 		</div>
@@ -42,7 +43,7 @@
 		<!-- Sitemap Columns -->
 		{#each sitemap as section}
 			<div class="flex flex-col gap-6">
-				<h4 class="text-m1 text-neutral-white">{section.title}</h4>
+				<h4 class="text-m1 text-neutral-white">{$t(section.titleKey)}</h4>
 				<ul class="flex flex-col gap-3">
 					{#each section.links as link}
 						<li>
@@ -50,7 +51,7 @@
 								href={link.href}
 								class="text-r3 text-neutral-silver transition-colors hover:text-primary"
 							>
-								{link.label}
+								{$t(link.labelKey)}
 							</a>
 						</li>
 					{/each}
@@ -60,12 +61,12 @@
 
 		<!-- Email / Stay up to date -->
 		<div class="flex flex-col gap-6">
-			<h4 class="text-m1 text-neutral-white">Stay up to date</h4>
+			<h4 class="text-m1 text-neutral-white">{$t('footer.stay_updated')}</h4>
 			<div class="flex flex-col gap-4">
 				<div class="relative">
 					<input
 						type="email"
-						placeholder="Your email address"
+						placeholder={$t('footer.email_placeholder')}
 						class="text-r3 w-full rounded-xs bg-neutral-dgrey py-2.5 pr-12 pl-4 text-neutral-white placeholder:text-neutral-grey focus:ring-2 focus:ring-primary focus:outline-hidden"
 					/>
 					<div class="absolute top-1/2 right-1 -translate-y-1/2">
@@ -90,7 +91,7 @@
 					</div>
 				</div>
 				<p class="text-r4 text-neutral-silver">
-					구독을 통해 Citrus Letter의 새로운 소식을 받아보세요.
+					{$t('footer.subscribe_desc')}
 				</p>
 			</div>
 		</div>

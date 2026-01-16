@@ -1,14 +1,15 @@
 <script lang="ts">
 	import Button from '$lib/components/button/Button.svelte';
+	import { t } from 'svelte-i18n';
 
 	/**
 	 * Navigation items configuration
 	 */
 	const navItems = [
-		{ label: 'Home', href: '/' },
-		{ label: 'Feature', href: '#feature' },
-		{ label: 'Pricing', href: '#pricing' },
-		{ label: 'Contact', href: '#contact' }
+		{ labelKey: 'nav.home', href: '/' },
+		{ labelKey: 'nav.feature', href: '#feature' },
+		{ labelKey: 'nav.pricing', href: '#pricing' },
+		{ labelKey: 'nav.contact', href: '#contact' }
 	];
 </script>
 
@@ -18,8 +19,8 @@
 	<div class="header-container flex h-[84px] items-center justify-between py-5">
 		<!-- 1. Citrus Letter (Logo) -->
 		<div class="flex items-center gap-2">
-			<!-- Placeholder for Logo Image -->
-			<span class="text-h3 text-neutral-black">Citrus Letter</span>
+			<img src="/images/normal/logo.png" alt="Logo" class="mb-3 h-auto w-[7%] object-cover" />
+			<span class="text-h3 text-primary">Citrus Letter</span>
 		</div>
 
 		<!-- Right Side Group: Nav + Actions -->
@@ -50,7 +51,7 @@
 									}
 								}}
 							>
-								{item.label}
+								{$t(item.labelKey)}
 							</a>
 						</li>
 					{/each}
@@ -60,7 +61,7 @@
 			<!-- Actions -->
 			<div class="flex items-center gap-4">
 				<!-- 6. Register Now -->
-				<Button variant="primary" size="md">Register Now</Button>
+				<Button variant="primary" size="md">{$t('button.register')}</Button>
 			</div>
 		</div>
 	</div>
