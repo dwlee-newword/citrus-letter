@@ -27,3 +27,7 @@ pnpm-workspace.yaml
 
 # Agent
 GEMINI.md
+
+# Assets
+static/images/*
+!static/images/normal
