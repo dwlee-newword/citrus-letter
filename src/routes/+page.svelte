@@ -24,17 +24,17 @@
 	]}
 />
 
-<section id="feature" class="section-container min-h-[50vh] py-20">
+<section id="feature" class="section-container min-h-[85vh] py-20">
 	<h2 class="text-h2 mb-10 text-center text-neutral-black">Feature</h2>
 	<p class="text-body text-center text-neutral-grey">Feature content goes here...</p>
 </section>
 
-<section id="pricing" class="section-container min-h-[50vh] bg-neutral-llgrey py-20">
+<section id="pricing" class="section-container min-h-[85vh] bg-neutral-llgrey py-20">
 	<h2 class="text-h2 mb-10 text-center text-neutral-black">Pricing</h2>
 	<p class="text-body text-center text-neutral-grey">Pricing content goes here...</p>
 </section>
 
-<section id="contact" class="section-container min-h-[50vh] py-20">
+<section id="contact" class="section-container min-h-[85vh] py-20">
 	<h2 class="text-h2 mb-10 text-center text-neutral-black">Contact</h2>
 	<p class="text-body text-center text-neutral-grey">Contact content goes here...</p>
 </section>
