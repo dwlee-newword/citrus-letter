@@ -1,0 +1,65 @@
+{
+	"common": {
+		"brand": "Citrus Letter"
+	},
+	"nav": {
+		"home": "홈",
+		"feature": "특징",
+		"pricing": "요금",
+		"contact": "문의"
+	},
+	"button": {
+		"register": "지금 가입하기"
+	},
+	"feature": {
+		"title": "특징",
+		"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의 저작권 보호를 위한 암호화, DRM 서비스를 제공합니다."
+	},
+	"price": {
+		"title": "요금",
+		"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의 저작권 보호를 위한 암호화, DRM 서비스를 제공합니다."
+	},
+	"contact": {
+		"title": "문의",
+		"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의 저작권 보호를 위한 암호화, DRM 서비스를 제공합니다."
+	},
+	"slides": {
+		"slide0": {
+			"title": "이미지, 문서 DRM 서비스 <br /><span class=\"text-primary\">Citrus Letter</span>",
+			"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의<br />저작권 보호를 위한 암호화, DRM 서비스를 제공합니다.",
+			"item1": "추적 가능한 메타데이터 삽입",
+			"item2": "수정에 대한 저항성"
+		},
+		"slide1": {
+			"title": "이미지 속 보이지 않는 <br /><span class=\"text-primary\">고유번호</span>",
+			"desc": "구매자의 고유번호를 이미지에 삽입하여<br />배포된 이미지를 추적할 수 있습니다.",
+			"item1": "고유번호 비가시화",
+			"item2": "이미지 수정에 대한 저항성"
+		},
+		"slide2": {
+			"title": "이미지를 통한 <br /><span class=\"text-primary\">구매자 식별</span>",
+			"desc": "이미지에서 구매자의 고유값을 추출하여<br />누구에게 배포된 이미지인지 식별합니다.",
+			"item1": "고유번호 추출",
+			"item2": "사용자 식별"
+		}
+	},
+	"footer": {
+		"company": "회사",
+		"about": "회사 소개",
+		"blog": "블로그",
+		"contact": "문의",
+		"pricing": "요금",
+		"testimonials": "고객 후기",
+		"support": "지원",
+		"help": "고객 센터",
+		"terms": "이용 약관",
+		"legal": "법적 고지",
+		"privacy": "개인정보 처리방침",
+		"status": "상태",
+		"stay_updated": "최신 소식 받기",
+		"email_placeholder": "이메일 주소",
+		"subscribe_desc": "구독을 통해 Citrus Letter의 새로운 소식을 받아보세요.",
+		"copyright": "Copyright © 2026 Citrus Letter.",
+		"all_rights": "All rights reserved."
+	}
+}

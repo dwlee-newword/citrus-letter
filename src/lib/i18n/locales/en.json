@@ -1,0 +1,42 @@
+{
+	"common": {
+		"brand": "Citrus Letter"
+	},
+	"nav": {
+		"home": "홈",
+		"feature": "특징",
+		"pricing": "요금",
+		"contact": "문의"
+	},
+	"button": {
+		"register": "지금 가입하기"
+	},
+	"slides": {
+		"slide0": {
+			"title": "이미지, 문서 DRM 서비스 <br /><span class=\"text-primary\">Citrus Letter</span>",
+			"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의<br />저작권 보호를 위한 암호화, DRM 서비스를 제공합니다.",
+			"item1": "고유값 비가시화",
+			"item2": "추적 가능한 메타데이터 삽입",
+			"item3": "이미지 수정에 대한 저항성"
+		}
+	},
+	"footer": {
+		"company": "회사",
+		"about": "회사 소개",
+		"blog": "블로그",
+		"contact": "문의",
+		"pricing": "요금",
+		"testimonials": "고객 후기",
+		"support": "지원",
+		"help": "고객 센터",
+		"terms": "이용 약관",
+		"legal": "법적 고지",
+		"privacy": "개인정보 처리방침",
+		"status": "상태",
+		"stay_updated": "최신 소식 받기",
+		"email_placeholder": "이메일 주소",
+		"subscribe_desc": "구독을 통해 Citrus Letter의 새로운 소식을 받아보세요.",
+		"copyright": "Copyright © 2026 Citrus Letter.",
+		"all_rights": "All rights reserved."
+	}
+}
