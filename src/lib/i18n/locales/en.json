@@ -11,13 +11,36 @@
 	"button": {
 		"register": "지금 가입하기"
 	},
+	"feature": {
+		"title": "특징",
+		"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의 저작권 보호를 위한 암호화, DRM 서비스를 제공합니다."
+	},
+	"price": {
+		"title": "요금",
+		"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의 저작권 보호를 위한 암호화, DRM 서비스를 제공합니다."
+	},
+	"contact": {
+		"title": "문의",
+		"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의 저작권 보호를 위한 암호화, DRM 서비스를 제공합니다."
+	},
 	"slides": {
 		"slide0": {
 			"title": "이미지, 문서 DRM 서비스 <br /><span class=\"text-primary\">Citrus Letter</span>",
 			"desc": "Citrus Letter는 배포, 판매되는 콘텐츠의<br />저작권 보호를 위한 암호화, DRM 서비스를 제공합니다.",
-			"item1": "고유값 비가시화",
-			"item2": "추적 가능한 메타데이터 삽입",
-			"item3": "이미지 수정에 대한 저항성"
+			"item1": "추적 가능한 메타데이터 삽입",
+			"item2": "수정에 대한 저항성"
+		},
+		"slide1": {
+			"title": "이미지 속 보이지 않는 <br /><span class=\"text-primary\">고유번호</span>",
+			"desc": "구매자의 고유번호를 이미지에 삽입하여<br />배포된 이미지를 추적할 수 있습니다.",
+			"item1": "고유번호 비가시화",
+			"item2": "이미지 수정에 대한 저항성"
+		},
+		"slide2": {
+			"title": "이미지를 통한 <br /><span class=\"text-primary\">구매자 식별</span>",
+			"desc": "이미지에서 구매자의 고유번호를 추출하여<br />누구에게 배포된 이미지인지 식별합니다.",
+			"item1": "고유번호 추출",
+			"item2": "사용자 식별"
 		}
 	},
 	"footer": {
