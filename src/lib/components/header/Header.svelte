@@ -7,9 +7,9 @@
 	 */
 	const navItems = [
 		{ labelKey: 'nav.home', href: '/' },
-		{ labelKey: 'nav.feature', href: '#feature' },
-		{ labelKey: 'nav.pricing', href: '#pricing' },
-		{ labelKey: 'nav.contact', href: '#contact' }
+		{ labelKey: 'nav.feature', href: '/#feature' },
+		{ labelKey: 'nav.pricing', href: '/#pricing' },
+		{ labelKey: 'nav.contact', href: '/#contact' }
 	];
 </script>
 
@@ -35,18 +35,26 @@
 								class="text-r2 text-neutral-black transition-colors hover:text-primary"
 								onclick={(e) => {
 									const href = item.href;
-									if (href.startsWith('#')) {
-										e.preventDefault();
-										const element = document.querySelector(href);
-										if (element) {
-											const headerOffset = 100; // Increased offset to account for sticky header
-											const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-											const offsetPosition = elementPosition - headerOffset;
+									if (href.includes('#')) {
+										const [path, hash] = href.split('#');
+										const isHomePage =
+											window.location.pathname === '/' || window.location.pathname === '';
 
-											window.scrollTo({
-												top: offsetPosition,
-												behavior: 'smooth'
-											});
+										// Only prevent default and scroll if we are on the homepage and the link targets homepage
+										if ((path === '/' || path === '') && isHomePage) {
+											e.preventDefault();
+											const element = document.querySelector('#' + hash);
+											if (element) {
+												const headerOffset = 100;
+												const elementPosition =
+													element.getBoundingClientRect().top + window.scrollY;
+												const offsetPosition = elementPosition - headerOffset;
+
+												window.scrollTo({
+													top: offsetPosition,
+													behavior: 'smooth'
+												});
+											}
 										}
 									}
 								}}
