@@ -2,5 +2,6 @@
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
-	"editor.tabSize": 2
+	"editor.tabSize": 2,
+	"svelte.language-server.runtime": "/Users/dongwoo/.nvm/versions/node/v22.22.0/bin/node"
 }
