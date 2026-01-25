@@ -12,6 +12,9 @@ node_modules
 .DS_Store
 Thumbs.db
 
+# VS Code
+.vscode/settings.json
+
 # Env
 .env
 .env.*
